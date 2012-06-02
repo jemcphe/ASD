@@ -76,7 +76,7 @@
                 autoFillData();
             }
             //Create Div/ul/li tags to display data
-            var makeDiv = $('<div id="players"/>');
+            /*var makeDiv = $('<div id="players"/>');
             //makeDiv.setAttribute("id", "players");
             $('body').append(makeDiv);
             //document.body.appendChild(makeDiv);
@@ -85,22 +85,25 @@
             $('#players').append(makeList);
             $('#players').css('display', 'block');
             //$('players').style.display = "display";
+            */
             for(var i=0, j=localStorage.length; i<j; i++) {
-                var makeLi = $('<li id="playerItems"/>');
-                var linksLi = $('<li id="links"/>');
-                makeList.append(makeLi);
+                //var makeLi = $('<li id="playerItems"/>');
+                //var linksLi = $('<li id="links"/>');
+                //makeList.append(makeLi);
+
                 var key = localStorage.key(i);
                 var value = localStorage.getItem(key);
                 var obj = JSON.parse(value);
-                var makeSubList = $('<ul id="sublist"/>');
-                makeLi.append(makeSubList);
+                //var makeSubList = $('<ul id="sublist"/>');
+                //makeLi.append(makeSubList);
                 //getImage(obj.position[1], makeSubList);
                 for(var n in obj) {
-                    var makeSubLi = $('<li id="subLi"/>');
-                    makeSubList.append(makeSubLi);
+                    //var makeSubLi = $('<li id="subLi"/>');
+                    //makeSubList.append(makeSubLi);
                     var optSubText = obj[n][0] +" "+ obj[n][1];
-                    makeSubLi.innerHTML = optSubText;
-                    makeSubList.append(linksLi);
+                    $('<li></li>').appendTo('#playerUl');
+                    $('li').innerHTML = optSubText;
+                    //makeSubList.append(linksLi);
                 }
                 makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/links for each item in localStorage.
             }
