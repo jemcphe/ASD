@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<players>
+    <player>
+        <position>QB</position>
+        <pname>Tony Romo</pname>
+        <team>Dallas Cowboys</team>
+        <starter>Yes</starter>
+        <notes>Great scrambler.</notes>
+    </player>
+
+    <player>
+        <position>RB</position>
+        <pname>Adrian Peterson</pname>
+        <team>Minnesota Vikings</team>
+        <starter>Yes</starter>
+        <notes>Unstoppable Force</notes>
+    </player>
+
+    <player>
+        <position>WR</position>
+        <pname>Larry Fitzgerald</pname>
+        <team>Arizona Cardinals</team>
+        <starter>Yes</starter>
+        <notes>Catches anything thrown his way.</notes>
+    </player>
+
+    <player>
+        <position>TE</position>
+        <pname>Rob Gronkowski</pname>
+        <team>New England Patriots/team>
+        <starter>Yes</starter>
+        <notes>Absolute Bull!</notes>
+    </player>
+
+    <player>
+        <position>K</position>
+        <pname>Garret Hartley</pname>
+        <team>New Orleans Saints</team>
+        <starter>Yes</starter>
+        <notes>Accurate and long!</notes>
+    </player>
+
+    <player>
+        <position>DEF</position>
+        <pname>SanFrancisco 49ers</pname>
+        <team>SanFrancisco 49ers</team>
+        <starter>Yes</starter>
+        <notes>Shut Down Defense</notes>
+    </player>
+</players>
