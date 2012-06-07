@@ -6,7 +6,9 @@
  */
 
 var json = {
-		"player1": {
+		"players":
+        [
+            {
 				"position": ["Position: ", "QB"],
 				"pname"	: ["Player Name: ", "Tony Romo"],
 				"team"		: ["Team Name: ", "Dallas Cowboys"],
@@ -15,7 +17,7 @@ var json = {
 				"skill"			: ["Skill: ", "8"],
 				"notes"		: ["Notes: ", "Scrambler"]
 		},
-		"player2": {
+		    {
 				"position": ["Position: ", "RB"],
 				"pname"	: ["Player Name: ", "Adrian Peterson"],
 				"team"		: ["Team Name: ", "Minnesota Vikings"],
@@ -24,7 +26,7 @@ var json = {
 				"skill"			: ["Skill: ", "10"],
 				"notes"		: ["Notes: ", "Fast"]
 		},
-		"player3": {
+		    {
 				"position": ["Position: ", "WR"],
 				"pname"	: ["Player Name: ", "Larry Fitzgerald"],
 				"team"		: ["Team Name: ", "Arizona Cardinals"],
@@ -33,7 +35,7 @@ var json = {
 				"skill"			: ["Skill: ", "9"],
 				"notes"		: ["Notes: ", "Catches Everything"]
 		},
-		"player4": {
+		    {
 				"position": ["Position: ", "TE"],
 				"pname"	: ["Player Name: ", "Rob Gronkowski"],
 				"team"		: ["Team Name: ", "New England Patriots"],
@@ -42,7 +44,7 @@ var json = {
 				"skill"			: ["Skill: ", "9"],
 				"notes"		: ["Notes: ", "Bull"]
 		},
-		"player5": {
+            {
 				"position": ["Position: ", "K"],
 				"pname"	: ["Player Name: ", "Garret Hartley"],
 				"team"		: ["Team Name: ", "New Orleans Saints"],
@@ -51,7 +53,7 @@ var json = {
 				"skill"			: ["Skill: ", "10"],
 				"notes"		: ["Notes: ", "Accurate Kicker"]
 		},
-		"player6": {
+		    {
 				"position": ["Position: ", "DEF"],
 				"pname"	: ["Player Name: ", "SanFrancisco 49ers"],
 				"team"		: ["Team Name: ", "SanFrancisco 49ers"],
@@ -60,7 +62,7 @@ var json = {
 				"skill"			: ["Skill: ", "9"],
 				"notes"		: ["Notes: ", "Great Pass Rush, Shut Down Defense"]
 		},
-		"player7": {
+		    {
 				"position": ["Position: ", "QB"],
 				"pname"	: ["Player Name: ", "Aaron Rogers"],
 				"team"		: ["Team Name: ", "Green Bay Packers"],
@@ -69,7 +71,7 @@ var json = {
 				"skill"			: ["Skill: ", "9"],
 				"notes"		: ["Notes: ", "Pure pocket passer"]
 		},
-		"player8": {
+		    {
 				"position": ["Position: ", "RB"],
 				"pname"	: ["Player Name: ", "Arian Foster"],
 				"team"		: ["Team Name: ", "Houston Texans"],
@@ -78,7 +80,7 @@ var json = {
 				"skill"			: ["Skill: ", "9"],
 				"notes"		: ["Notes: ", "Very fast.. Cannot stop."]
 		},
-		"player9": {
+		    {
 				"position": ["Position: ", "WR"],
 				"pname"	: ["Player Name: ", "Steve Johnson"],
 				"team"		: ["Team Name: ", "Buffalo Bills"],
@@ -87,7 +89,7 @@ var json = {
 				"skill"			: ["Skill: ", "6"],
 				"notes"		: ["Notes: ", "Amazing catches"]
 		},
-		"player10": {
+		    {
 				"position": ["Position: ", "TE"],
 				"pname"	: ["Player Name: ", "Jimmy Graham"],
 				"team"		: ["Team Name: ", "New Orleans Saints"],
@@ -96,7 +98,7 @@ var json = {
 				"skill"			: ["Skill: ", "9"],
 				"notes"		: ["Notes: ", "Extremely Reliable"]
 		},
-		"player11": {
+		    {
 				"position": ["Position: ", "K"],
 				"pname"	: ["Player Name: ", "Dan Bailey"],
 				"team"		: ["Team Name: ", "Dallas Cowboys"],
@@ -105,7 +107,7 @@ var json = {
 				"skill"			: ["Skill: ", "5"],
 				"notes"		: ["Notes: ", "Accurate, reliable backup"]
 		},
-		"player12": {
+		    {
 				"position": ["Position: ", "DEF"],
 				"pname"	: ["Player Name: ", "Chicago Bears"],
 				"team"		: ["Team Name: ", "Chicago Bears"],
@@ -114,7 +116,7 @@ var json = {
 				"skill"			: ["Skill: ", "9"],
 				"notes"		: ["Notes: ", "Great Pass Rush, fearless"]
 		},
-		"player13": {
+		    {
 				"position": ["Position: ", "QB"],
 				"pname"	: ["Player Name: ", "Tom Brady"],
 				"team"		: ["Team Name: ", "New England Patriots"],
@@ -123,7 +125,7 @@ var json = {
 				"skill"			: ["Skill: ", "8"],
 				"notes"		: ["Notes: ", "Scrambler"]
 		},
-		"player14": {
+		    {
 				"position": ["Position: ", "RB"],
 				"pname"	: ["Player Name: ", "Frank Gore"],
 				"team"		: ["Team Name: ", "SanFranciso 49ers"],
@@ -132,7 +134,7 @@ var json = {
 				"skill"			: ["Skill: ", "8"],
 				"notes"		: ["Notes: ", "Always good to make plays happen."]
 		},
-		"player15": {
+		    {
 				"position": ["Position: ", "WR"],
 				"pname"	: ["Player Name: ", "Miles Austin"],
 				"team"		: ["Team Name: ", "Dallas Cowboys"],
@@ -141,7 +143,7 @@ var json = {
 				"skill"			: ["Skill: ", "8"],
 				"notes"		: ["Notes: ", "Count on him in the clutch."]
 		},
-		"player16": {
+		    {
 				"position": ["Position: ", "TE"],
 				"pname"	: ["Player Name: ", "Jason Witten"],
 				"team"		: ["Team Name: ", "Dallas Cowboys"],
@@ -150,7 +152,7 @@ var json = {
 				"skill"			: ["Skill: ", "9"],
 				"notes"		: ["Notes: ", "Reliable off the bench."]
 		},
-		"player17": {
+		    {
 				"position": ["Position: ", "K"],
 				"pname"	: ["Player Name: ", "Robbie Gould"],
 				"team"		: ["Team Name: ", "Chicago Bears"],
@@ -159,7 +161,7 @@ var json = {
 				"skill"			: ["Skill: ", "8"],
 				"notes"		: ["Notes: ", "Accurate Kicker"]
 		},
-		"player18": {
+		    {
 				"position": ["Position: ", "DEF"],
 				"pname"	: ["Player Name: ", "Baltimore Ravens"],
 				"team"		: ["Team Name: ", "Baltimore Ravens"],
@@ -168,7 +170,7 @@ var json = {
 				"skill"			: ["Skill: ", "6"],
 				"notes"		: ["Notes: ", "Ray Lewis... Need I say more?"]
 		},
-		"player19": {
+		    {
 			"position"	: ["Position: ", "WR"],
 			"pname"		: ["Player Name: ", "Randy Moss"],
 			"team"		: ["Team Name: ", "SanFrancisco 49ers"],
@@ -177,7 +179,7 @@ var json = {
 			"skill"		: ["Skill: ", "6"],
 			"notes"		: ["Notes: ", "Coming back from retirement... don't expect too much."]
 		},
-		"player20": {
+		    {
 			"position"	: ["Position: ", "RB"],
 			"pname"		: ["Player Name: ", "Peyton Hillis"],
 			"team"		: ["Team Name: ", "Clevland Browns"],
@@ -186,4 +188,5 @@ var json = {
 			"skill"		: ["Skill: ", "7"],
 			"notes"		: ["Notes: ", "Slightly inconsistent, but when he's on... he's amazing!"]
 		}
+    ]
 }

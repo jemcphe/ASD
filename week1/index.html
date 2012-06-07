@@ -35,16 +35,22 @@
 		</div>
 		
 		<div data-role="content" data-theme="a">
-				<ul data-role='listview' data-theme="b" data-filter="true" data-inset="true">
+				<ul data-role='controlgroup' data-theme="b" data-filter="true" data-inset="true">
 					<a href="#addPlayerPage	" data-ajax="false"><img src="images/calltoaction.png" alt="" id="CTA"/></a>
 					<li>
-						<a href="#players">My Players</a>
+						<a href="#jsonPage">
+                            <input type="button" value="JSON Data" />
+						</a>
 					</li>
 					<li>
-						<a href="#proj">Projections</a>
+						<a href="#xmlPage">
+                            <input type="button" value="XML Data" />
+						</a>
 					</li>
 					<li>
-						<a href="#news">League News</a>
+						<a href="#csvPage">
+                            <input type="button" value="CSV Data" />
+						</a>
 					</li>
 
 				</ul>
@@ -66,7 +72,7 @@
 		</div>
 		<div data-role="collapsible" data-collapsed="true" data-theme="b" id="playerData" >
 			<h2 id="myPlayersCollapse">My Players</h2>
-			<ul data-role="listview" id="playerUl" class="ui-li-icon" data-theme="b" data-filter="true" data-inset="true">
+			<ul data-role="listview" id="playerUl" data-theme="b" data-filter="true" data-inset="true">
 				<!-- <li id="topPlayerLi"><img src="images/playerphoto.png" id="playerImg"/>
 					<aside>
 						<ul data-role="controlgroup">
@@ -238,13 +244,13 @@
 		<div id="clearDisplay" data-role="navbar">
 			<ul>
 				<li><a href="#" id="clear" data-role="button">Clear Data</a></li>
-				<li><a href="#players" id="display" data-role="button">Display Data</a></li>
+				<li><a href="#" id="display" data-role="button">Display Data</a></li>
 				<!--<li><a href="addPlayer.html" id="addNew" style="display:none;">Add New Item</a></li>-->
 			</ul>
 		</div>
 		<!--Begin Form, fieldset, and legend-->
 		<div data-role="content">
-			<form action="" method="post" id="addPlayerForm" data-theme="a" data-ajax="false">
+			<form action="#" method="get" id="addPlayerForm" data-theme="a" data-ajax="false">
 				<!--<fieldset id="addPlayerFieldset" data-theme="b"> <!--Creates box around containing material-->
 					<!--<ul id="errors"></ul>-->
 					<!--<ul data-role="controlgroup" id="playerInfo">-->
@@ -311,13 +317,121 @@
 			</nav>			
 		</div>
 	</div>
+
+<!-- JSON Data Page -->
+    <div data-role="page" id="jsonPage" data-theme="a" data-add-back-btn="true">
+        <!--Header Section-->
+        <div data-role="header" data-theme="b">
+            <img src="images/logo.png" alt="" id="logo"/>
+            <h4 id="headerTxt">JSON Data Page</h4>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" id="jsonPlayer" data-filter="true" data-inset="true">
+                <div>
+                    <input type="button" id="getJson" value="Click Here for JSON" data-theme="b" />
+                </div>
+
+                <!--<li data-role="fieldcontain">
+                    <ul id="jsonData">
+                        <div class="myPlayers">
+                            <h2>Players</h2>
+                        </div>
+                    </ul>
+                </li>-->
+
+
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme-content="b">
+            <nav data-role="navbar" >
+                <ul data-theme="b">
+                    <li><a href="http://jemcphe.github.com/ASD/week1" data-theme="b" data-transition="turn">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<!-- XML Data Page -->
+    <div data-role="page" id="xmlPage" data-theme="a" data-add-back-btn="true">
+        <!--Header Section-->
+        <div data-role="header" data-theme="b">
+            <img src="images/logo.png" alt="" id="logo"/>
+            <h4 id="headerTxt">XML Data Page</h4>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true" data-inset="true">
+                <h1>XML Data</h1>
+
+
+                <div>
+                    <input type="button" id="getXML" value="Click Here for XML" data-theme="b" />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <div id="test">
+                        <div class="test">
+                            <h2>Players</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme-content="b">
+            <nav data-role="navbar" >
+                <ul data-theme="b">
+                    <li><a href="http://jemcphe.github.com/ASD/week1" data-theme="b" data-transition="turn">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<!-- XML Data Page -->
+    <div data-role="page" id="csvPage" data-theme="a" data-add-back-btn="true">
+        <!--Header Section-->
+        <div data-role="header" data-theme="b">
+            <img src="images/logo.png" alt="" id="logo"/>
+            <h4 id="headerTxt">CSV Data Page</h4>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true" data-inset="true">
+                <h1>CSV Data</h1>
+
+
+                <div>
+                    <input type="button" id="getCSV" value="Click Here for CSV" data-theme="b" />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <div id="test">
+                        <div class="test">
+                            <h2>Players</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme-content="b">
+            <nav data-role="navbar" >
+                <ul data-theme="b">
+                    <li><a href="http://jemcphe.github.com/ASD/week1" data-theme="b" data-transition="turn">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
 	<!-- JavaScript under here -->
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>	
 	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
 	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js"></script>
-	<script src="js/main2.js" type="text/javascript" ></script>
-	<script src="js/json.js" type="text/javascript" ></script>
+    <script src="xhr/json.js" type="text/javascript" ></script>
+    <script src="js/getData.js" type="text/javascript" ></script>
+    <script src="js/main3.js" type="text/javascript" ></script>
+
 </body>
 </html>
