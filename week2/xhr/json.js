@@ -189,4 +189,4 @@ var json = {
 			"notes"		: ["Notes: ", "Slightly inconsistent, but when he's on... he's amazing!"]
 		}
     ]
-}
+};

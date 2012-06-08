@@ -8,6 +8,7 @@
 
 $('#jsonPage').on('pageinit', function(){
     $("#getJson").on("click", function(){
+        $('#jsonUL').empty();
         $.ajax({
             url: 'xhr/json.js',
             type: 'GET',
@@ -20,7 +21,7 @@ $('#jsonPage').on('pageinit', function(){
                                         '<p>' + player.pname[0] + " " + player.pname[1] +'</p>' +
                                         '<p>' + player.team[0] + " " + player.team[1] +'</p>' +
                                         '<p>' + player.starter[0] + " " + player.starter[1] +'</p>' +
-                                        '<p>' + player.notes[0] + " " + player.notes[1] +'</p>'
+                                        '<p>' + player.notes[0] + " " + player.notes[1] +'</p>' + '<br />'
                                      );
                     makeSubList.append(makeSubLi).appendTo('#jsonUL');
                 }
@@ -34,6 +35,7 @@ $('#jsonPage').on('pageinit', function(){
 $('#xmlPage').on('pageinit', function(){
 
     $('#getXML').on('click', function(){
+        $('#xmlDiv').empty();
         $.ajax({
             url: 'xhr/players.xml',
             type: 'GET',
@@ -69,17 +71,17 @@ $('#csvPage').on('pageinit', function() {
             dataType: 'text',
             success: function(response) {
                 var lines = response.split('\n');
-                for (var lineNum= 0; lineNum < lines.length; lineNum++) {
+                for (var lineNum= 1; lineNum < lines.length; lineNum++) {
                     var row = lines[lineNum];
                     var columns = row.split(",");
                     var makeSubList = $('<li></li>');
-                    var makeSubLi = $(  '<p>'+ "Position: " + position[0] + '</p>' +
-                                        '<p>'+ "Player: " + name[0] + '</p>' +
-                                        '<p>'+ "Team: " + team[0] + '</p>' +
-                                        '<p>'+ "Starter: " + starter[0] + '</p>' +
-                                        '<p>'+ "Notes: " + notes[0] + '</p>' + '<br />'
+                    var makeSubLi = $(  '<p>'+ "Position: " + columns[0] + '</p>' +
+                                        '<p>'+ "Player: " + columns[1] + '</p>' +
+                                        '<p>'+ "Team: " + columns[2] + '</p>' +
+                                        '<p>'+ "Starter: " + columns[3] + '</p>' +
+                                        '<p>'+ "Notes: " + columns[4] + '</p>' + '<br />'
                     );
-                    makeSubList.append(makeSubLi).appendTo('#csvDiv');
+                    makeSubList.append(makeSubLi).appendTo('#csvUL');
                 }
             }
         });
