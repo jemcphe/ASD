@@ -2,12 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="098c31a4-516b-4e3f-a89a-dd33096d883c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week1/index.html" afterPath="$PROJECT_DIR$/week1/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week1/js/getData.js" afterPath="$PROJECT_DIR$/week1/js/getData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week1/js/main3.js" afterPath="$PROJECT_DIR$/week1/js/main3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week1/xhr/players.csv" afterPath="$PROJECT_DIR$/week1/xhr/players.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week1/xhr/players.xml" afterPath="$PROJECT_DIR$/week1/xhr/players.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/addPlayer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/comingSoon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/css/gold.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/css/idraft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/css/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/calltoaction.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/comingsoon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/injuries.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/myleagues.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/myplayers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/news.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/playerphoto.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/projections.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/getData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/libs/jquery-1.7.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/libs/jquery.mobile-1.1.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/libs/jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/libs/modernizr.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/main2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/main3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/xhr/json.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/xhr/players.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/xhr/players.xml" afterPath="" />
     </list>
     <ignored path="iDraft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,57 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="getData.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/week1/js/getData.js">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="16" selection-start="2606" selection-end="2608" vertical-scroll-proportion="1.3016529">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week1/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="42" selection-start="60" selection-end="60" vertical-scroll-proportion="64.177216">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="players.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week1/xhr/players.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="14" selection-start="113" selection-end="118" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="players.csv" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week1/xhr/players.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week1/xhr/json.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="66" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main3.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week1/js/main3.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="286" column="7" selection-start="9657" selection-end="9657" vertical-scroll-proportion="0.0">
+            <state line="406" column="68" selection-start="15139" selection-end="15144" vertical-scroll-proportion="0.43217665">
               <folding />
             </state>
           </provider>
@@ -148,6 +122,7 @@
         <option value="$PROJECT_DIR$/week1/xhr/players.xml" />
         <option value="$PROJECT_DIR$/week1/xhr/players.csv" />
         <option value="$PROJECT_DIR$/week1/js/getData.js" />
+        <option value="$PROJECT_DIR$/week2/index.html" />
       </list>
     </option>
   </component>
@@ -216,61 +191,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="week1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iDraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="week1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xhr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iDraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="week1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iDraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="week1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="week2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -595,27 +516,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="215" selection-end="215" vertical-scroll-proportion="22.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week1/js/main2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="9" selection-start="5374" selection-end="5374" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week1/css/gold.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="13" selection-start="2427" selection-end="2427" vertical-scroll-proportion="1.2820513">
@@ -623,46 +523,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/js/main3.js">
+    <entry file="file://$PROJECT_DIR$/week2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="286" column="7" selection-start="9657" selection-end="9657" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week1/xhr/json.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="66" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week1/xhr/players.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="113" selection-end="118" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week1/xhr/players.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="42" selection-start="60" selection-end="60" vertical-scroll-proportion="64.177216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week1/js/getData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="16" selection-start="2606" selection-end="2608" vertical-scroll-proportion="1.3016529">
+        <state line="406" column="68" selection-start="15139" selection-end="15144" vertical-scroll-proportion="0.43217665">
           <folding />
         </state>
       </provider>
