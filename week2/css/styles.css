@@ -1,0 +1,147 @@
+/*
+	 James E. McPherson III
+	 Visual Frameworks - Project 3
+	 1203
+	 03/15/2012
+ */
+
+/**************************index.html**************************/
+body {
+	background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	margin: 0px;
+	overflow:scroll;
+}
+#container {
+	width: 320px;
+	margin: 0 auto; 
+}
+header {
+	margin: 0 auto;
+}
+header img {
+	margin: 0px 20% 0px 20%;
+}
+#search {
+	display: block;
+	margin-bottom: 5px;
+}
+#search input {
+	display: inline;
+	border: 1px solid;
+	border-radius: 25px;
+	vertical-align: middle;
+	width: 235px;
+}
+#search img {
+	width: 60px;
+	height: 18px;
+	vertical-align: middle;
+}
+#CTA {
+	background-image: url('images/calltoaction.jpg');
+	width: 300px;
+	height: 100px;
+	margin: 5px 0px;
+}
+#CTA a {
+	float: right;
+	margin-top: 67px;
+	margin-right: 10px;
+}
+#buttons ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+#pageHeader {
+	font-weight: bold;
+	color: #f9a225;
+	text-align: center;
+}
+/**********************addPlayer.html***********************/
+#addPlayer-page {
+	background-color: #666;
+	overflow: scroll;
+}
+#addPlayer-page div {
+	background-color: #000;
+	width: 100%;
+	height: 10%;
+	margin: 0px;
+	padding: 10px;
+}
+fieldset {
+    color: #F9A225;
+    margin: 5px 20px 10px 20px;
+}
+legend {
+	font-size: 20px;
+	font-weight: bold;
+}
+li {
+	display: block;
+}
+label {
+	font-size: 20px;
+	color: #F9A225;
+	display: block;
+	margin: 5px 0px;
+}
+
+ #submit {
+ 	margin: 0px 42% 10px 42%;
+ }
+ footer {
+ 	width: 100%;
+ 	padding: 10px 0px 10px 0px;
+ }
+footer a {
+	margin: 20px;
+	color: #F9A225;
+	text-decoration: none;
+}
+footer a:hover {
+	color: white;
+}
+footer a:active {
+	color: #000;
+}
+#players {
+	padding: 0px;
+}
+#players a {
+	text-decoration: none;
+	color: #F9A225;
+}
+#players a:hover {
+	color: #fff;
+}
+#players ul {
+	padding: 5px;
+}
+#players ul li {
+	background-color: #666;
+	margin-bottom: 5px;
+}
+#players ul li ul li {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+#errors {
+	font-size: 14px;
+	color: #a31d1d;
+	font-weight: bold;
+}
+#players img {
+	width: 100%;
+}
+/******************Coming Soon Page**************/
+#soon {
+	width: 320px;
+	margin: 0 auto;
+}
+#homeBtn {
+	margin: 0px 45px; 
+}
