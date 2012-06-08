@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="098c31a4-516b-4e3f-a89a-dd33096d883c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/addPlayer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/comingSoon.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/css/gold.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/css/idraft.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/calltoaction.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/comingsoon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/injuries.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/myleagues.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/myplayers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/news.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/playerphoto.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/projections.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/images/search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/getData.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/libs/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/libs/jquery.mobile-1.1.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/libs/jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/libs/modernizr.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/main2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/js/main3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/xhr/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/xhr/players.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week1/xhr/players.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/index.html" afterPath="$PROJECT_DIR$/week2/index.html" />
     </list>
     <ignored path="iDraft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,7 +63,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="406" column="68" selection-start="15139" selection-end="15144" vertical-scroll-proportion="0.43217665">
+            <state line="412" column="71" selection-start="15367" selection-end="15367" vertical-scroll-proportion="0.5741325">
               <folding />
             </state>
           </provider>
@@ -192,6 +166,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="week2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iDraft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="week2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iDraft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="week2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -525,7 +539,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="406" column="68" selection-start="15139" selection-end="15144" vertical-scroll-proportion="0.43217665">
+        <state line="412" column="71" selection-start="15367" selection-end="15367" vertical-scroll-proportion="0.5741325">
           <folding />
         </state>
       </provider>
