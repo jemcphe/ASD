@@ -1,6 +1,7 @@
-Position: QB,Name: Tony Romo,Team: Dallas Cowboys,Starter: Yes,Notes: Great Scrambler
-Position: RB,Name: Adrian Peterson,Team: Minnesota Vikings,Starter: Yes,Notes: Unstoppable Force
-Position: WR,Name: Larry Fitzgerald,Team: Arizona Cardinals,Starter: Yes,Notes: Catches anything thrown his way
-Position: TE,Name: Rob Gronkowski,Team: New England Patriots,Starter: Yes,Notes: Absolute Bull
-Position: K,Name: Garret Hartley,Team: New Orleans Saints,Starter: Yes,Notes: Accurate and long
-Position: DEF,Name: SanFrancisco 49ers,Team: SanFrancisco 49ers,Starter: Yes,Notes: Shut Down Defense
+position,name,team,starter,notes
+QB,Tony Romo,Dallas Cowboys,Yes,Great Scrambler
+RB,Adrian Peterson,Minnesota Vikings,Yes,Unstoppable Force
+WR,Larry Fitzgerald,Arizona Cardinals,Yes,Catches anything thrown his way
+TE,Rob Gronkowski,New England Patriots,Yes,Absolute Bull
+K,Garret Hartley,New Orleans Saints,Yes,Accurate and long
+DEF,SanFrancisco 49ers,SanFrancisco 49ers,Yes,Shut Down Defense

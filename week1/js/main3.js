@@ -276,7 +276,7 @@ $(document).ready(function() {
     });
 
     //Set Link & submit Click Events
-    var displayLink = $('#display');
+    /*var displayLink = $('#display');
     $(displayLink).on("click", function(getData){
         $.mobile.changePage('#players'), {
             type:"post",
@@ -284,7 +284,7 @@ $(document).ready(function() {
             reloadPage:true
         }
         });
-
+     */
     var clearLink = $('#clear');
     $(clearLink).on("click", clearLocal);
 
