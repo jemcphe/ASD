@@ -324,20 +324,12 @@
             <img src="images/logo.png" alt="" class="logo"/>
             <h4 class="headerTxt">JSON Data Page</h4>
         </div>
+        <h2>My Players</h2>
         <div data-role="content">
-            <ul data-role="listview" data-filter="true" data-inset="true"> <!-- SEARCH BAR -->
+            <ul data-role="listview" id="jsonUL" data-filter="true" data-inset="true"> <!-- SEARCH BAR -->
                 <div>
                     <input type="button" id="getJson" value="JSON Player Data" data-theme="b" />
                 </div>
-
-                <div data-role="fieldcontain">
-                    <div id="jsonDiv">
-                        <h2>My Players</h2>
-                    </div>
-                    <ul data-role="collapsible" id="jsonUL"></ul>
-                </div>
-
-
             </ul>
         </div>
 
@@ -387,16 +379,11 @@
             <img src="images/logo.png" alt="" class="logo"/>
             <h4 class="headerTxt">XML Data Page</h4>
         </div>
+        <h2>My Players</h2>
         <div data-role="content">
-            <ul data-role="listview" data-filter="true" data-inset="true"> <!-- SEARCH BAR -->
+            <ul data-role="listview" id="csvUL" data-filter="true" data-inset="true"> <!-- SEARCH BAR -->
                 <div>
                     <input type="button" id="getCSV" value="CSV Player Data" data-theme="b" />
-                </div>
-
-                <div data-role="fieldcontain">
-                    <div id="csvDIV">
-                        <h2>My Players</h2>
-                    </div>
                 </div>
             </ul>
         </div>
