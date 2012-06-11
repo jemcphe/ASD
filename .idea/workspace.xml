@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="098c31a4-516b-4e3f-a89a-dd33096d883c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/week2/xhr/json.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/index.html" afterPath="$PROJECT_DIR$/week2/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/js/getData.js" afterPath="$PROJECT_DIR$/week2/js/getData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/xhr/json.js" afterPath="$PROJECT_DIR$/week2/xhr/json.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/js/main3.js" afterPath="$PROJECT_DIR$/week2/js/main3.js" />
     </list>
     <ignored path="iDraft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,7 +67,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="326" column="10" selection-start="12178" selection-end="12178" vertical-scroll-proportion="-9.958333">
+            <state line="247" column="30" selection-start="8577" selection-end="8577" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="players.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week2/xhr/players.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="62" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,19 +85,17 @@
       <file leaf-file-name="getData.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week2/js/getData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="70" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+            <state line="32" column="3" selection-start="155" selection-end="1370" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="json.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/week2/xhr/json.js">
+      <file leaf-file-name="main3.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week2/js/main3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="11" selection-start="85" selection-end="85" vertical-scroll-proportion="-2.946281">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="124" column="57" selection-start="4945" selection-end="4945" vertical-scroll-proportion="0.36886394">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,15 +127,18 @@
         <option value="$PROJECT_DIR$/week1/xhr/players.xml" />
         <option value="$PROJECT_DIR$/week1/xhr/players.csv" />
         <option value="$PROJECT_DIR$/week1/js/getData.js" />
-        <option value="$PROJECT_DIR$/week2/index.html" />
-        <option value="$PROJECT_DIR$/week2/js/getData.js" />
         <option value="$PROJECT_DIR$/week2/xhr/json.js" />
+        <option value="$PROJECT_DIR$/week2/xhr/players.json" />
+        <option value="$PROJECT_DIR$/week2/js/getData.js" />
+        <option value="$PROJECT_DIR$/week2/js/main3.js" />
+        <option value="$PROJECT_DIR$/week2/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
     <option name="y" value="22" />
-    <option name="width" value="1440" />
+    <option name="width" value="861" />
     <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -264,6 +275,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -273,9 +287,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -292,8 +303,8 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -325,6 +336,24 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -361,24 +390,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -396,6 +407,17 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -422,17 +444,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -472,7 +483,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
+    <frame x="1" y="22" width="861" height="874" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -490,7 +501,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2420977" sideWeight="0.6706507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2398524" sideWeight="0.6706507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -560,11 +571,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Test/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="10" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.4752066">
-          <folding>
-            <element signature="e#0#153#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="29" column="10" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.4752066" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/json.js">
@@ -574,31 +581,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="13" selection-start="2427" selection-end="2427" vertical-scroll-proportion="1.2820513">
+        <state line="60" column="13" selection-start="2427" selection-end="2427" vertical-scroll-proportion="1.2820513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/js/main2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/xhr/players.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="62" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/js/getData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="3" selection-start="155" selection-end="1370" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="326" column="10" selection-start="12178" selection-end="12178" vertical-scroll-proportion="-9.958333">
+        <state line="247" column="30" selection-start="8577" selection-end="8577" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/js/getData.js">
+    <entry file="file://$PROJECT_DIR$/week2/js/main3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="70" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+        <state line="124" column="57" selection-start="4945" selection-end="4945" vertical-scroll-proportion="0.36886394">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week2/xhr/json.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="85" selection-end="85" vertical-scroll-proportion="-2.946281">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
