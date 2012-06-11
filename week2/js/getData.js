@@ -6,16 +6,17 @@
  * To change this template use File | Settings | File Templates.
  */
 
-$('#jsonPage').on('pageinit', function(){
+$('#jsonPage').live('pageinit', function(){
     $("#getJson").on("click", function(){
-        $('#jsonUL').empty();
+        //$('#jsonUL').empty();
         $.ajax({
-            url: 'xhr/json.js',
+            url: 'xhr/players.json',
             type: 'GET',
             dataType: 'json',
-            success: function(response) {
-                for(var i= 0, j= response.players.length; i<j; i++){
-                    var player = response.players[i];
+            success: function(result) {
+                console.log("JSON Data Loaded");
+                for(var i= 0, j= result.players.length; i<j; i++){
+                    var player = result.players[i];
                     var makeSubList = $('<li></li>');
                     var makeSubLi = $(  '<p>' + player.position[0] + " " + player.position[1] +'</p>' +
                                         '<p>' + player.pname[0] + " " + player.pname[1] +'</p>' +
@@ -25,14 +26,12 @@ $('#jsonPage').on('pageinit', function(){
                                      );
                     makeSubList.append(makeSubLi).appendTo('#jsonUL');
                 }
-            },
-            error: function() {
-                console.log("This is not working!!!");
+                $('#jsonUL').controlgroup('refresh');
             }
         });
     })
 });
-$('#xmlPage').on('pageinit', function(){
+$('#xmlPage').live('pageinit', function(){
 
     $('#getXML').on('click', function(){
         $('#xmlDiv').empty();
@@ -55,7 +54,7 @@ $('#xmlPage').on('pageinit', function(){
                                         '<p>'+player.starter+'</p>' +
                                         '<p>'+player.notes+'</p>' + '<br />'
                         );
-                    makeSubList.append(makeSubLi).appendTo('#xmlDiv');
+                    makeSubList.append(makeSubLi).appendTo('#xmlUL');
                 });
             }
         });

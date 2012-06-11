@@ -88,23 +88,18 @@ $(document).ready(function() {
             var key = localStorage.key(i);
             var value = localStorage.getItem(key);
             var obj = JSON.parse(value);
-            console.log(item);
-            var makeLi = $('<li></li>');
-            var linksLi = $('<li></li>');
-            makeList.append(makeLi);
-            var makeSubList = $('<ul></ul>');
-            makeLi.append(makeSubList);
-            //getImage(obj.position[1], makeSubList);
-            for(var n in obj) {
-                var makeSubLi = $('<li></li>');
-                makeSubList.append(makeSubLi);
-                var optSubText = obj[n][0] +" "+ obj[n][1];
-                makeSubLi.html(optSubText);
-                makeSubList.append(linksLi);
+            console.log(key);
+            var makeSubList = $('<li></li>');
+            var makeSubLi = $(  '<p>' + player.position[0] + " " + player.position[1] +'</p>' +
+                '<p>' + player.pname[0] + " " + player.pname[1] +'</p>' +
+                '<p>' + player.team[0] + " " + player.team[1] +'</p>' +
+                '<p>' + player.starter[0] + " " + player.starter[1] +'</p>' +
+                '<p>' + player.notes[0] + " " + player.notes[1] +'</p>' + '<br />'
+            );
+            makeSubList.append(makeSubLi).appendTo('#playerUL');
             }
-            makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/links for each item in localStorage.
+            //makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/links for each item in localStorage.
         }
-    }
 
     //Function to get the image based on position selection
    /* function getImage(positionName, makeSubList) {
@@ -117,10 +112,31 @@ $(document).ready(function() {
 
     //Auto populate local storage w/ JSON Object
     function autoFillData() {
-        for(var n in json) {
+        /*for(var n in json) {
             var id = Math.floor(Math.random()* 10000001);
             localStorage.setItem(id, JSON.stringify(json[n]));
-        }
+        */
+                //$('#jsonUL').empty();
+                $.ajax({
+                    url: 'xhr/players.json',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function(result) {
+                        console.log("JSON Data Loaded");
+                        for(var i= 0, j= result.players.length; i<j; i++){
+                            var player = result.players[i];
+                            var makeSubList = $('<li></li>');
+                            var makeSubLi = $(  '<p>' + player.position[0] + " " + player.position[1] +'</p>' +
+                                '<p>' + player.pname[0] + " " + player.pname[1] +'</p>' +
+                                '<p>' + player.team[0] + " " + player.team[1] +'</p>' +
+                                '<p>' + player.starter[0] + " " + player.starter[1] +'</p>' +
+                                '<p>' + player.notes[0] + " " + player.notes[1] +'</p>' + '<br />'
+                            );
+                            makeSubList.append(makeSubLi).appendTo('#playerUl');
+                        }
+                        $('#playerUl').listview('refresh');
+                    }
+                });
     }
 
     // Create the edit/delete links for each stored item when displayed.
@@ -276,7 +292,7 @@ $(document).ready(function() {
     });
 
     //Set Link & submit Click Events
-    /*var displayLink = $('#display');
+    var displayLink = $('#display');
     $(displayLink).on("click", function(getData){
         $.mobile.changePage('#players'), {
             type:"post",
@@ -284,7 +300,7 @@ $(document).ready(function() {
             reloadPage:true
         }
         });
-     */
+
     var clearLink = $('#clear');
     $(clearLink).on("click", clearLocal);
 
