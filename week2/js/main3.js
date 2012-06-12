@@ -9,7 +9,7 @@
 
 // Wait until the DOM is ready.
 $(document).ready(function() {
-
+    var starterValue = "No";
 
     //Find value of selected checkbox
     function getCheckboxValue(){
@@ -39,6 +39,11 @@ $(document).ready(function() {
                 return false;
         }
     }
+
+    function reload() {
+        location.reload();
+    }
+
     // Create StoreData Function
     function storeData(key){
         //If there is no key, this is a new item and we need to generate a new key
@@ -70,108 +75,8 @@ $(document).ready(function() {
         reload();
     }
 
-    // function to get data from form Values & display in div
-    function getData() {
-        //toggleControls("on");
-        if(localStorage.length === 0) {
-            alert("There are no players stored, so a default player was added");
-            autoFillData();
-        }
-        //Create Div/ul/li tags to display data
-        /*var makeDiv = $('<div></div>');
-        makeDiv.attr("id", "players");
-        $('body').append(makeDiv);
-        var makeList = $('<ul></ul>');
-        makeDiv.append(makeList);*/
-        $('#players').empty();
-        for(var i=0, j=localStorage.length; i<j; i++) {
-            var key = localStorage.key(i);
-            var value = localStorage.getItem(key);
-            var obj = JSON.parse(value);
-            console.log(key);
-            var makeSubList = $('<li></li>');
-            var makeSubLi = $(  '<p>' + player.position[0] + " " + player.position[1] +'</p>' +
-                '<p>' + player.pname[0] + " " + player.pname[1] +'</p>' +
-                '<p>' + player.team[0] + " " + player.team[1] +'</p>' +
-                '<p>' + player.starter[0] + " " + player.starter[1] +'</p>' +
-                '<p>' + player.notes[0] + " " + player.notes[1] +'</p>' + '<br />'
-            );
-            makeSubList.append(makeSubLi).appendTo('#playerUL');
-            }
-            //makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/links for each item in localStorage.
-        }
-
-    //Function to get the image based on position selection
-   /* function getImage(positionName, makeSubList) {
-        var imageLi = document.createElement('li');
-        makeSubList.appendChild(imageLi);
-        var newImage = document.createElement('img');
-        var setSrc = newImage.setAttribute("src", "images/"+ positionName + ".png");
-        imageLi.appendChild(newImage);
-    } */
-
-    //Auto populate local storage w/ JSON Object
-    function autoFillData() {
-        /*for(var n in json) {
-            var id = Math.floor(Math.random()* 10000001);
-            localStorage.setItem(id, JSON.stringify(json[n]));
-        */
-                //$('#jsonUL').empty();
-                $.ajax({
-                    url: 'xhr/players.json',
-                    type: 'GET',
-                    dataType: 'json',
-                    success: function(result) {
-                        console.log("JSON Data Loaded");
-                        for(var i= 0, j= result.players.length; i<j; i++){
-                            var player = result.players[i];
-                            var makeSubList = $('<li></li>');
-                            var makeSubLi = $(  '<p>' + player.position[0] + " " + player.position[1] +'</p>' +
-                                '<p>' + player.pname[0] + " " + player.pname[1] +'</p>' +
-                                '<p>' + player.team[0] + " " + player.team[1] +'</p>' +
-                                '<p>' + player.starter[0] + " " + player.starter[1] +'</p>' +
-                                '<p>' + player.notes[0] + " " + player.notes[1] +'</p>' + '<br />'
-                            );
-                            makeSubList.append(makeSubLi).appendTo('#playerUl');
-                        }
-                        $('#playerUl').listview('refresh');
-                    }
-                });
-    }
-
-    // Create the edit/delete links for each stored item when displayed.
-    function makeItemLinks(key, linksLi) {
-        //edit Item Link
-        var editLink = $('<a></a>');
-        editLink.prop("href", "#");
-        editLink.key = key;
-        var editText = "Edit Player";
-        $(editLink).on('click', function() {
-            editItem(key);
-            console.log("Edit Link Pushed.")
-        })
-        editLink.html(editText);
-        linksLi.append(editLink);
-
-        //add line break
-        var breakTag = $('<br>');
-        linksLi.append(breakTag);
-
-        //Delete Item Link
-        var deleteLink = $('<a></a>');
-        deleteLink.prop("href", "#");
-        deleteLink.key = key;
-        var deleteText = "Delete Player";
-        $(deleteLink).on('click', function() {
-            deleteItem(key);
-            console.log("Delete Link Pressed.")
-        })
-        deleteLink.html(deleteText);
-        linksLi.append(deleteLink);
-    }
-
     //Edit Item Function
-    function editItem() {
+    function editItem(key) {
         //Get data from our item in local storage
         var  value = localStorage.getItem(this.key);
         var item = JSON.parse(value);
@@ -227,6 +132,106 @@ $(document).ready(function() {
         }
     }
 
+    //Auto populate local storage w/ JSON Object
+    function autoFillData() {
+        /*for(var n in json) {
+         var id = Math.floor(Math.random()* 10000001);
+         localStorage.setItem(id, JSON.stringify(json[n]));
+         */
+        //$('#jsonUL').empty();
+        $.ajax({
+            url: 'xhr/players.json',
+            type: 'GET',
+            dataType: 'json',
+            success: function(result) {
+                console.log("JSON Data Loaded");
+                for(var i= 0, j= result.players.length; i<j; i++){
+                    var player = result.players[i];
+                    var makeSubList = $('<li></li>');
+                    var makeSubLi = $(  '<p>' + player.position[0] + " " + player.position[1] +'</p>' +
+                        '<p>' + player.pname[0] + " " + player.pname[1] +'</p>' +
+                        '<p>' + player.team[0] + " " + player.team[1] +'</p>' +
+                        '<p>' + player.starter[0] + " " + player.starter[1] +'</p>' +
+                        '<p>' + player.notes[0] + " " + player.notes[1] +'</p>' + '<br />'
+                    );
+                    makeSubList.append(makeSubLi).appendTo('#playerUl');
+                }
+                $('#playerUl').listview('refresh');
+            }
+        });
+    }
+
+    // function to get data from form Values & display in div
+    function getData() {
+        //toggleControls("on");
+        if(localStorage.length === 0) {
+            alert("There are no players stored, so a default player was added");
+            autoFillData();
+        }
+        //Create Div/ul/li tags to display data
+        /*var makeDiv = $('<div></div>');
+        makeDiv.attr("id", "players");
+        $('body').append(makeDiv);
+        var makeList = $('<ul></ul>');
+        makeDiv.append(makeList);*/
+        $('#players').empty();
+        for(var i=0, j=localStorage.length; i<j; i++) {
+            var key = localStorage.key(i);
+            var value = localStorage.getItem(key);
+            var obj = JSON.parse(value);
+            console.log(key);
+            var makeSubList = $('<li></li>');
+            var makeSubLi = $(  '<p>' + obj.position[0] + " " + obj.position[1] +'</p>' +
+                '<p>' + obj.pname[0] + " " + obj.pname[1] +'</p>' +
+                '<p>' + obj.team[0] + " " + obj.team[1] +'</p>' +
+                '<p>' + obj.starter[0] + " " + obj.starter[1] +'</p>' +
+                '<p>' + obj.notes[0] + " " + obj.notes[1] +'</p>' + '<br />'
+            );
+            makeSubList.append(makeSubLi).appendTo('#playerUL');
+            }
+            //makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/links for each item in localStorage.
+        }
+
+    //Function to get the image based on position selection
+   /* function getImage(positionName, makeSubList) {
+        var imageLi = document.createElement('li');
+        makeSubList.appendChild(imageLi);
+        var newImage = document.createElement('img');
+        var setSrc = newImage.setAttribute("src", "images/"+ positionName + ".png");
+        imageLi.appendChild(newImage);
+    } */
+
+    // Create the edit/delete links for each stored item when displayed.
+    function makeItemLinks(key, linksLi) {
+        //edit Item Link
+        var editLink = $('<a></a>');
+        editLink.prop("href", "#");
+        editLink.key = key;
+        var editText = "Edit Player";
+        $(editLink).on('click', function() {
+            editItem(key);
+            console.log("Edit Link Pushed.");
+        });
+        editLink.html(editText);
+        linksLi.append(editLink);
+
+        //add line break
+        var breakTag = $('<br>');
+        linksLi.append(breakTag);
+
+        //Delete Item Link
+        var deleteLink = $('<a></a>');
+        deleteLink.prop("href", "#");
+        deleteLink.key = key;
+        var deleteText = "Delete Player";
+        $(deleteLink).on('click', function() {
+            deleteItem(key);
+            console.log("Delete Link Pressed.");
+        });
+        deleteLink.html(deleteText);
+        linksLi.append(deleteLink);
+    }
+
     /*	function validate (e) {
      //Define the elements we want to check
      var getPosition = $('position');
@@ -277,9 +282,10 @@ $(document).ready(function() {
 
      //variable defaults
      var 	positions = ["--Select Position--", "QB", "RB", "WR", "TE", "K", "DEF"],
-     starterValue = "No",
-     errMsg = $('errors');
-     ;*/
+     */
+
+    // errMsg = $('errors');
+
     //makeDropDown();
 
     var apform = $('#addPlayerForm');
@@ -294,11 +300,11 @@ $(document).ready(function() {
     //Set Link & submit Click Events
     var displayLink = $('#display');
     $(displayLink).on("click", function(getData){
-        $.mobile.changePage('#players'), {
+        $.mobile.changePage('#players', {
             type:"post",
             data:$(apform).serialize(),
             reloadPage:true
-        }
+        });
         });
 
     var clearLink = $('#clear');
