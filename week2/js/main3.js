@@ -44,17 +44,23 @@ $(document).ready(function() {
         location.reload();
     }
 
+    function createKey() {
+        var 	id									= Math.floor(Math.random()*1000001);
+        console.log("Key was generated!");
+    }
+
     // Create StoreData Function
     function storeData(key){
+        var id = key;
         //If there is no key, this is a new item and we need to generate a new key
         if(!key){
             //Create Random Key
-            var 	id									= Math.floor(Math.random()*1000001);
+            createKey();
         } else {
             //else, set the id to the existing key we're editing so that it will save over the data.
             //The key is the same key that's been passed along from the editSubmit event handler
             //to the validate function, and then passed here, into the storeData function.
-            id = key;
+            var id = key;
         }
         //getCheckboxValue();
         // gather up all our form field values and store in an object.
@@ -188,9 +194,9 @@ $(document).ready(function() {
                 '<p>' + obj.notes[0] + " " + obj.notes[1] +'</p>' + '<br />'
             );
             makeSubList.append(makeSubLi).appendTo('#playerUL');
-            }
-            //makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/links for each item in localStorage.
         }
+            //makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/links for each item in localStorage.
+    }
 
     //Function to get the image based on position selection
    /* function getImage(positionName, makeSubList) {
