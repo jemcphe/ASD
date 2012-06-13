@@ -311,7 +311,7 @@ $(document).ready(function() {
             data:$(apform).serialize(),
             reloadPage:true
         });
-        });
+    });
 
     var clearLink = $('#clear');
     $(clearLink).on("click", clearLocal);

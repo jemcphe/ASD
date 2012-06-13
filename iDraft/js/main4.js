@@ -36,10 +36,29 @@ function storeData(key){
 }
 
 function autoFillData() {
-    for(var n in json) {
+	$.mobile.changePage("#players");
+	$.ajax({
+		url  	:"_view/players",
+		dataType: "json",
+		success : function(data) {
+			$.each(data.rows, function(index, player) {
+				var position 	= player.value.position;
+				var pname		= player.value.pname;
+				var team		= player.value.team;
+				var notes		= player.value.notes;
+				$(		'<p>' + position[0] +" "+ position[1] +'</p>' +
+						'<p>' + pname[0] +" "+ pname[1] + '</p>' +
+						'<p>' + team[0] +" "+ team[1] + '</p>' +
+						'<p>' + notes[0] +" "+ notes[1] + '</p>' + '<br />'
+				).appendTo('#playerli');					
+			});
+			//$('#playerlist').listview('refresh');
+		}
+	});
+    /*for(var n in json) {
      var id = Math.floor(Math.random()* 10000001);
      localStorage.setItem(id, JSON.stringify(json[n]));
-    }
+    }*/
 }
 
 // function to get data from form Values & display in div
@@ -66,10 +85,28 @@ function getData() {
     //makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/links for each item in localStorage.
 }
 
+//function to clear data from localStorage
+function clearLocal() {
+    if(localStorage.length === 0) {
+        alert("There is no data to clear.");
+    }else{
+        localStorage.clear();
+        alert("All Players have been deleted!");
+        window.location.reload();
+        return false;
+    }
+}
+
 $("#addPlayerPage").live("submit", function(){
     storeData();
-    $.mobile.changePage("#players");
+    //$.mobile.changePage("#players");
     return false;
 });
+
+var displayLink = $('#display');
+$(displayLink).on("click", getData);
+
+var clearLink = $('#clear');
+$(clearLink).on("click", clearLocal);
 
 });

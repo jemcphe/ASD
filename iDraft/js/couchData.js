@@ -14,7 +14,7 @@ $(document).ready(function(){
 						'<p>' + notes[0] +" "+ notes[1] + '</p>' + '<br />'
 				).appendTo('#playerlist');					
 			});
-			$('#playerlist').listview('refresh');
+			//$('#playerlist').listview('refresh');
 		}
 	});
 });
