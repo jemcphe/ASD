@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="098c31a4-516b-4e3f-a89a-dd33096d883c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/js/main3.js" afterPath="$PROJECT_DIR$/week2/js/main3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/index.html" afterPath="$PROJECT_DIR$/week2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/js/main4.js" afterPath="$PROJECT_DIR$/week2/js/main4.js" />
     </list>
     <ignored path="iDraft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,24 +57,34 @@
     <breakpoint_rules />
     <ui_properties />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/week2/index.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="25" column="7" selection-start="0" selection-end="15362" vertical-scroll-proportion="0.5185185">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="iDraft" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week2/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="247" column="30" selection-start="8577" selection-end="8577" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="players.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="players.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week2/xhr/players.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="62" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
+            <state line="55" column="75" selection-start="1919" selection-end="2290" vertical-scroll-proportion="0.3828829">
               <folding />
             </state>
           </provider>
@@ -82,16 +93,43 @@
       <file leaf-file-name="getData.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week2/js/getData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="54" selection-start="692" selection-end="698" vertical-scroll-proportion="0.0">
+            <state line="27" column="27" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main3.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main4.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week2/js/main4.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="json.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week2/js/json.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="21" selection-start="0" selection-end="1953" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main3.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week2/js/main3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="18" selection-start="2646" selection-end="2646" vertical-scroll-proportion="0.9170306">
+            <state line="167" column="5" selection-start="4750" selection-end="5977" vertical-scroll-proportion="-20.76923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week2/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,8 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/week1/js/main.js" />
-        <option value="$PROJECT_DIR$/week1/js/json.js" />
         <option value="$PROJECT_DIR$/Test/index.html" />
         <option value="$PROJECT_DIR$/Test/main.js" />
         <option value="$PROJECT_DIR$/week1/js/main2.js" />
@@ -126,16 +162,17 @@
         <option value="$PROJECT_DIR$/week1/js/getData.js" />
         <option value="$PROJECT_DIR$/week2/xhr/json.js" />
         <option value="$PROJECT_DIR$/week2/xhr/players.json" />
-        <option value="$PROJECT_DIR$/week2/index.html" />
         <option value="$PROJECT_DIR$/week2/js/getData.js" />
         <option value="$PROJECT_DIR$/week2/js/main3.js" />
+        <option value="$PROJECT_DIR$/week2/js/main4.js" />
+        <option value="$PROJECT_DIR$/week2/js/json.js" />
+        <option value="$PROJECT_DIR$/week2/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="22" />
-    <option name="width" value="737" />
+    <option name="width" value="683" />
     <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -166,6 +203,19 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,43 +294,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="week2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iDraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -480,7 +495,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="22" width="737" height="874" extended-state="0" />
+    <frame x="0" y="22" width="683" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -498,7 +513,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2398524" sideWeight="0.6706507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23937008" sideWeight="0.6706507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -586,33 +601,51 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/js/main.js">
+    <entry file="file://$PROJECT_DIR$/week2/js/getData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="30" selection-start="8577" selection-end="8577" vertical-scroll-proportion="0.0">
+        <state line="27" column="27" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/xhr/players.json">
+    <entry file="file://$PROJECT_DIR$/week2/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="62" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week2/js/getData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="54" selection-start="692" selection-end="698" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/js/main3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="18" selection-start="2646" selection-end="2646" vertical-scroll-proportion="0.9170306">
+        <state line="167" column="5" selection-start="4750" selection-end="5977" vertical-scroll-proportion="-20.76923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/js/json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="0" selection-end="1953" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/js/main4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="7" selection-start="0" selection-end="15362" vertical-scroll-proportion="0.5185185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/xhr/players.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="75" selection-start="1919" selection-end="2290" vertical-scroll-proportion="0.3828829">
           <folding />
         </state>
       </provider>
