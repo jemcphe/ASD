@@ -9,7 +9,7 @@
 $('#jsonPage').live('pageinit', function(){
     $("#getJson").on("click", function(){
         //$('#jsonUL').empty();
-        $.ajax({
+    	$.ajax({
             url: 'xhr/players.json',
             type: 'GET',
             dataType: 'json',
