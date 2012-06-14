@@ -2,9 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="098c31a4-516b-4e3f-a89a-dd33096d883c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/index.html" afterPath="$PROJECT_DIR$/week2/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/js/main4.js" afterPath="$PROJECT_DIR$/week2/js/main4.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/_attachments/js/couchData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/_attachments/js/main4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/evently/items/_changes/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/evently/items/_changes/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/evently/items/_changes/query.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/evently/profile/profileReady/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/evently/profile/profileReady/selectors/form/submit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/_attachments/jquery.couch.app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/_attachments/jquery.couch.app.util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/_attachments/jquery.evently.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/_attachments/jquery.mustache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/_attachments/jquery.pathbinder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/_attachments/loader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/_init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/adminParty/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/doLogin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/doLogout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/doSignup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/loggedIn/after.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/loggedIn/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/loggedIn/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/loggedIn/selectors.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/loggedOut/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/loggedOut/selectors.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/loginForm/after.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/loginForm/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/loginForm/selectors/a[href=#signup].json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/loginForm/selectors/form/submit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/signupForm/after.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/signupForm/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/signupForm/selectors/a[href=#login].json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/account/signupForm/selectors/form/submit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/profile/loggedIn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/profile/loggedOut/after.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/profile/loggedOut/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/profile/noProfile/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/profile/noProfile/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/profile/noProfile/selectors/form/submit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/profile/profileReady/after.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/profile/profileReady/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/evently/profile/profileReady/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/atom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/code.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/docform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/linkup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/md5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/mustache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/path.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/redirect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/lib/validate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/vendor/couchapp/metadata.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/_id" afterPath="$PROJECT_DIR$/asdcouch/iDraft/app/_id" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdcouch/iDraft/couchapp.rc" afterPath="$PROJECT_DIR$/asdcouch/iDraft/couchapp.rc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/_attachments/index.html" afterPath="$PROJECT_DIR$/asdcouch/iDraft/app/_attachments/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdcouch/iDraft/app/couchapp.json" afterPath="$PROJECT_DIR$/asdcouch/iDraft/app/couchapp.json" />
     </list>
     <ignored path="iDraft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,85 +115,11 @@
     <breakpoint_rules />
     <ui_properties />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/week2/index.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="25" column="7" selection-start="0" selection-end="15362" vertical-scroll-proportion="0.5185185">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="iDraft" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="players.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/week2/xhr/players.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="75" selection-start="1919" selection-end="2290" vertical-scroll-proportion="0.3828829">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getData.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week2/js/getData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="27" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main4.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week2/js/main4.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week2/js/json.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="21" selection-start="0" selection-end="1953" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main3.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week2/js/main3.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="5" selection-start="4750" selection-end="5977" vertical-scroll-proportion="-20.76923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week2/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -172,7 +156,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="683" />
+    <option name="width" value="825" />
     <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -191,7 +175,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -202,105 +186,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iDraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iDraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iDraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="week2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iDraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="week2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xhr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iDraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="week2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iDraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -315,8 +201,8 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -348,6 +234,24 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -384,24 +288,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -419,6 +305,17 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -445,17 +342,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -495,8 +381,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="683" height="874" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="825" height="874" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -603,51 +489,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/js/getData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="27" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/js/main3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="5" selection-start="4750" selection-end="5977" vertical-scroll-proportion="-20.76923">
-          <folding />
-        </state>
+        <state line="167" column="5" selection-start="4750" selection-end="5977" vertical-scroll-proportion="-20.76923" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/js/json.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="0" selection-end="1953" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="21" selection-start="0" selection-end="1953" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/js/main4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="43" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="7" selection-start="0" selection-end="15362" vertical-scroll-proportion="0.5185185">
-          <folding />
-        </state>
+        <state line="25" column="7" selection-start="0" selection-end="15362" vertical-scroll-proportion="0.5185185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/xhr/players.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="75" selection-start="1919" selection-end="2290" vertical-scroll-proportion="0.3828829">
-          <folding />
-        </state>
+        <state line="55" column="75" selection-start="1919" selection-end="2290" vertical-scroll-proportion="0.3828829" />
       </provider>
     </entry>
   </component>

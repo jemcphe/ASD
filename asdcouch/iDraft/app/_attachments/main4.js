@@ -15,7 +15,7 @@ function storeData(key){
         //else, set the id to the existing key we're editing so that it will save over the data.
         //The key is the same key that's been passed along from the editSubmit event handler
         //to the validate function, and then passed here, into the storeData function.
-        return key;
+        id= key;
     }
     //getCheckboxValue();
     // gather up all our form field values and store in an object.
@@ -31,8 +31,9 @@ function storeData(key){
 
     console.log(item);
     //Save Data into Local Storage: Use Stringify to convert our object to a string.
-    localStorage.setItem(key, JSON.stringify(item));
+    localStorage.setItem(id, JSON.stringify(item));
     alert("Player Saved!");
+    location.reload();
 }
 
 function autoFillData() {
@@ -71,16 +72,14 @@ function getData() {
 
     for(var i=0, j=localStorage.length; i<j; i++) {
         var key = localStorage.key(i);
-        var value = localStorage.getItem(key);
-        var obj = JSON.parse(value);
-        console.log(key);
+        var obj = JSON.parse(localStorage.getItem(key));
+        var position 	= obj.value.position;
+        console.log(obj.position);
         var makeSubList = $('<li></li>');
-        var makeSubLi = $(  '<p>' + obj.position[0] + " " + obj.position[1] +'</p>' +
-            '<p>' + obj.pname[0] + " " + obj.pname[1] +'</p>' +
-            '<p>' + obj.team[0] + " " + obj.team[1] +'</p>' +
-            '<p>' + obj.notes[0] + " " + obj.notes[1] +'</p>' + '<br />'
-        );
-        makeSubList.append(makeSubLi).appendTo('#playerUl');
+        $(  '<p>' + obj[0] + " " + obj[1] +'</p>'
+ 
+        ).appendTo('playerli');
+        //makeSubList.append(makeSubLi).appendTo('#playerli');
     }
     //makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/links for each item in localStorage.
 }
@@ -98,13 +97,28 @@ function clearLocal() {
 }
 
 $("#addPlayerPage").live("submit", function(){
-    storeData();
+	var apform = $('#addPlayerForm');
+
+    apform.validate({
+        invalidHandler: function(form, validator) {},
+        submitHandler: function(){
+            var id = Math.floor(Math.random()*1000001);
+            var data = apform.serializeArray();
+            localStorage.setItem(id, JSON.stringify(data));
+            console.log(data);
+            alert("Player Saved!");
+            window.location.reload(apform);
+        }
+    });
     //$.mobile.changePage("#players");
     return false;
 });
 
 var displayLink = $('#display');
-$(displayLink).on("click", getData);
+$(displayLink).on("click", function(){
+	$.mobile.changePage("#players");
+	getData();
+});
 
 var clearLink = $('#clear');
 $(clearLink).on("click", clearLocal);
