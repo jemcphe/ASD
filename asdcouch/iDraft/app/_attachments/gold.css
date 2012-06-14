@@ -1,0 +1,38 @@
+.logo {
+	margin-right: 40%;
+	margin-left: 40%;
+	width: 20%;
+	height: 30px;
+	
+}
+.headerTxt {
+	font-size: 12px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+#CTA {
+	width: 100%;
+	margin-bottom: 5px;
+}
+#topPlayerLi {
+	margin-top: 15px;
+}
+#myPlayersCollapse {
+	margin-bottom: 5px;
+}
+#comingSoon {
+	width: 100%;
+}
+#addPlayerFieldset {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+label.error {
+	display: block;
+	margin: 10px 0;
+	color: orange;
+}
+.hints {
+	font-size: 10px;
+}
