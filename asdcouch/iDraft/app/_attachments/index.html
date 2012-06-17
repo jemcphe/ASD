@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8"/>
 	
-	<title>Gold Application</title>
+	<title>iDRAFT</title>
 	
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="HandheldFriendly" content="True"/>
@@ -39,33 +39,64 @@
 				</div>
 			</div>
 	
-			<div data-role="collapsible" data-collapsed="true" id="couchData">
-			<h2>My Players / Couch Data</h2>
+			<div id="couchData">
 				<ul data-role="listview">
-				<li id="playerlist"></li>
+					<li><a href="#positions" data-transition="turn">My Players</a></li>
 				</ul>
+				<!-- <ul data-role="listview" id="players">
+				<li id="playerlist"></li>
+				</ul> -->
 			</div>
 		
-		<div data-role="footer" data-position="fixed" data-theme-content="b">
+		<!-- <div data-role="footer" data-position="fixed" data-theme-content="b">
 			<nav data-role="navbar" >
 				<ul data-theme="b">
 					<li><a href="http://jemcphe.github.com/ASD/week2" data-theme="b" data-transition="turn">Home</a></li>
 				</ul>
 			</nav>			
-		</div>	
+		</div> -->	
 	</div>
-<!--Players Page-->
-	<div data-role="page" id="players" data-add-back-btn="#home" data-theme="a">
+
+<!--**********************Positions Page**********************-->
+	<div data-role="page" id="positions" data-add-back-btn="#home" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<img src="logo.png" alt="" class="logo"/>
+			<h4 class="headerTxt">Select Players By Position</h4>
+		</div>
+        <!--******************Position Content**************-->
+		<div data-role="content" data-theme="a" id="playerData" >
+			<h2>Positions</h2>
+			<ul data-role="listview" id="positionUl" class="ui-li-icon" data-theme="b" data-inset="true">
+				<!-- <li><a href="#players">Quarterback</a></li>
+				<li><a href="#players">Running Back</a></li>
+				<li><a href="#players">Wide Receiver</a></li>
+				<li><a href="#players">Tight End</a></li>
+				<li><a href="#players">Kicker</a></li>
+				<li><a href="#players">Defense</a></li> -->
+			</ul>
+		</div>
+
+        <div data-role="footer" data-position="fixed" data-theme-content="b">
+            <nav data-role="navbar" >
+                <ul data-theme="b">
+                    <li><a href="#" data-theme="b" data-transition="turn" data-icon="plus" data-iconpos="top">Add Player</a></li>
+                </ul>
+            </nav>
+        </div>
+	</div>
+
+<!--***************************PLAYERS PAGE************************-->
+<!-- 	<div data-role="page" id="players" data-add-back-btn="#home" data-theme="a">
 		<div data-role="header" data-theme="b">
 			<img src="logo.png" alt="" class="logo"/>
 			<h4 class="headerTxt">My Players</h4>
 		</div>
-        <!--******************Player Content**************-->
-		<div data-role="collapsible" data-collapsed="true" data-theme="b" id="playerData" >
-			<h2 id="myPlayersCollapse">My Players</h2>
-			<ul data-role="listview" id="playerUl" class="ui-li-icon" data-theme="b" data-inset="true">
+        ******************Player Content**************
+		<div data-role="content" data-theme="a" id="playerData" >
+			<h2 id="myPlayersCollapse">Select A Player</h2>
+			<ul data-role="listview" id="playersUl" class="ui-li-icon" data-theme="b" data-inset="true">
 			<li id="playerli"></li>
-				<!-- <li id="topPlayerLi"><img src="images/playerphoto.png" id="playerImg"/>
+				<li id="topPlayerLi"><img src="images/playerphoto.png" id="playerImg"/>
 					<aside>
 						<ul data-role="controlgroup">
 							<li>Name: 		Tony Romo</li>
@@ -118,10 +149,10 @@
 							<li>Team: 		SanFrancisco 49ers</li>
 						</ul>
 					</aside>
-				</li> -->
+				</li>
 			</ul>
 		</div>
-		<!--My Leagues Drop Down-->
+		My Leagues Drop Down
 		<div data-role="collapsible" data-theme="b">
 			<h2>My Leagues</h2>
 			<ul data-role="listview">
@@ -133,11 +164,11 @@
         <div data-role="footer" data-position="fixed" data-theme-content="b">
             <nav data-role="navbar" >
                 <ul data-theme="b">
-                    <li><a href="http://jemcphe.github.com/ASD/week2" data-theme="b" data-transition="turn">Home</a></li>
+                    <li><a href="#" data-theme="b" data-transition="turn" data-icon="plus" data-iconpos="top">Add Player</a></li>
                 </ul>
             </nav>
         </div>
-	</div>
+	</div> -->
 <!--Projections Page-->	
 	<div data-role="page" id="proj" data-add-back-btn="#home">
 			<div data-role="header" data-theme="b">
@@ -392,7 +423,8 @@
 	<!-- JavaScript under here -->
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-	<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>	
+	<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="jquery.couch.js"></script>	
 	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
 	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js"></script>
     <script src="couchData.js" type="text/javascript"></script>

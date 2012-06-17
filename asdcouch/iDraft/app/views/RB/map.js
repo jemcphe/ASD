@@ -1,6 +1,6 @@
 function(doc){
-	if(doc._id.substr(0,7) === "player:") {
-		emit(doc._id.substr(7), {
+	if(doc._id.substr(0,3) === "RB:") {
+		emit(doc._id.substr(3), {
 			"position": doc.position,
 			"pname": doc.pname,
 			"team": doc.team,
