@@ -1,4 +1,4 @@
-//Adding Comments for revision's sake
+
 var urlVars = function() {
 	var urlData = $($.mobile.activePage).data("url");
 	console.log(urlData);
@@ -31,7 +31,7 @@ $('#positions').live('pageshow', function(){
 	});
 });
 
-/******************DISPLAY PLAYERS ON PLAYERS PAGE********************/
+/******************DISPLAY PLAYERS ON PLAYERS PAGE*******************/
 
  
 
@@ -45,11 +45,33 @@ $('#players').live('pageshow', function(){
 			$.each(data.rows, function(index, position) {
 				var item	= (position.value || position.doc);
 				var pname	= position.value.pname[1];
-				var pos		= position.value.position;
+				var pos		= position.value.position[1];
 				console.log(pname);
-				$('<li>').append($('<a>').attr("href", "info.html?pname=" + item.pname).text(pname)).appendTo('#playersUl');
+				$('<li>').append($('<a>').attr("href", "info.html?position=" + pos).attr("data-rel", "dialog").text(pname)).appendTo('#playersUl');
 			});
 			$('#playersUl').listview('refresh');
+		}
+	});
+});
+
+$('#info').live('pageshow', function(){
+	var player = urlVars().position;
+	console.log(player);
+	$.couch.db("idraft").view("asdproject/"+ player, {
+		success: function(data){
+			console.log(data);
+			$('#playerInfo').empty();
+			$.each(data.rows, function(index, position) {
+				var item	= (position.value || position.doc);
+				var pname	= position.value.pname;
+				var pos		= position.value.position;
+				var team	= position.value.team;
+				var notes	= position.value.notes;
+				$(	'<h2>' + pname[1] + "</h2>" +
+					'<p>' + pos[0] + " " + pos[1] + "</p>" +
+					'<p>' + team[0] + " " + team[1] + "</p>" +
+					'<p>' + notes[0] + " " + notes[1] + "</p>").appendTo('#playerinfo');
+			});
 		}
 	});
 });

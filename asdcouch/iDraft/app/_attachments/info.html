@@ -7,24 +7,22 @@
 </head>
 <body>
 <!--**************************Player Info Page***************************-->
-<div data-role="page" id="info" data-theme="a">
-	<div data-role="header" data-theme="b">
-		<img src="logo.png" alt="" class="logo"/>
-		<h4 class="headerTxt">Player Information</h4>
+	<div data-role="page" id="info" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<img src="logo.png" alt="" class="logo"/>
+			<h4 class="headerTxt">Player Information</h4>
+		</div>
+	       <!--******************Player Content**************-->
+		<div data-role="content" data-theme="b" id="playerinfo" ></div>
+	
+	    <div data-role="footer" data-theme-content="a">
+	        <div data-role="navbar" >
+	            <ul data-role="controlgroup">
+	                <li><a href="#" data-theme="b" data-transition="turn" data-icon="gear" data-iconpos="top">Edit Player</a></li>
+	                <li><a href="#" data-theme="b" data-transition="turn" data-icon="delete" data-iconpos="top">Delete Player</a></li>
+	            </ul>
+	        </div>
+	    </div>
 	</div>
-       <!--******************Player Content**************-->
-	<div data-role="content" data-theme="a" id="playerinfo" >
-		<ul data-role="fieldcontain" id="infoUl" data-theme="b" data-inset="true">
-		</ul>
-	</div>
-
-       <div data-role="footer" data-position="fixed" data-theme-content="b">
-           <nav data-role="navbar" >
-               <ul data-theme="b">
-                   <li><a href="#" data-theme="b" data-transition="turn" data-icon="plus" data-iconpos="top">Add Player</a></li>
-               </ul>
-           </nav>
-       </div>
-</div>
 </body>
 </html>
