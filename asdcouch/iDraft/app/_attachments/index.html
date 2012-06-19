@@ -270,7 +270,7 @@
 		</div>
 		<!--Begin Form, fieldset, and legend-->
 		<div data-role="content">
-			<form action="" method="post" id="addPlayerForm" data-theme="a" data-ajax="false">
+			<form action="" method="POST" id="addPlayerForm" data-theme="a" data-ajax="false">
 				<!--<fieldset id="addPlayerFieldset" data-theme="b"> <!--Creates box around containing material-->
 					<!--<ul id="errors"></ul>-->
 					<!--<ul data-role="controlgroup" id="playerInfo">-->
@@ -279,12 +279,12 @@
 							<label for="position">Player Position</label>
 								<select name="position" id="position" data-native-menu="false" data-theme="b" class="required">
 									<option data-placeholder="true">Select Position</option>
-									<option value="quarterback">QB</option>
-									<option value="runningback">RB</option>
-									<option value="widereceiver">WR</option>
-									<option value="tightend">TE</option>
-									<option value="kicker">K</option>
-									<option value="defense">DEF</option>
+									<option value="QB">QB</option>
+									<option value="RB">RB</option>
+									<option value="WR">WR</option>
+									<option value="TE">TE</option>
+									<option value="K">K</option>
+									<option value="DEF">DEF</option>
 								</select>
 						</div>
 						<!--Name Field w/ text input-->
@@ -323,7 +323,7 @@
 					<!--</ul>-->
 					<!--Prominent Done/Add Button-->	
 					<div data-role="fieldcontain" id="submit">
-						<input type="submit" value="Add Player" data-theme="b"/>
+						<input type="submit" value="Add Player" id="addPlayerButton" data-theme="b"/>
 					</div>	
 				<!--</fieldset>-->
 			</form>
@@ -425,7 +425,7 @@
 	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
 	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js"></script>
     <script src="couchData.js" type="text/javascript"></script>
-	<script src="main4.js" type="text/javascript"></script>
+	<!-- <script src="main4.js" type="text/javascript"></script> -->
 
 </body>
 </html>

@@ -57,7 +57,7 @@ $('#players').live('pageshow', function(){
 $('#info').live('pageshow', function(){
 	var player = urlVars().position;
 	console.log(player);
-	$.couch.db("idraft").view("asdproject/"+ player, {
+	$.couch.db("idraft").view("asdproject/"+ player , {
 		success: function(data){
 			console.log(data);
 			$('#playerInfo').empty();
@@ -66,13 +66,62 @@ $('#info').live('pageshow', function(){
 				var pname	= position.value.pname;
 				var pos		= position.value.position;
 				var team	= position.value.team;
+				var bye		= position.value.bye;
+				var skill	= position.value.skill;
 				var notes	= position.value.notes;
 				$(	'<h2>' + pname[1] + "</h2>" +
 					'<p>' + pos[0] + " " + pos[1] + "</p>" +
 					'<p>' + team[0] + " " + team[1] + "</p>" +
+					'<p>' + bye[0] + " " + bye[1] + "</p>" +
+					'<p>' + skill[0] + " " + skill[1] + "</p>" +
 					'<p>' + notes[0] + " " + notes[1] + "</p>").appendTo('#playerinfo');
 			});
 		}
+	});
+});
+
+$("#addPlayerPage").live("pageshow", function(){
+	$('#addPlayerButton').on('click', function(event){
+	event.preventDefault();
+	
+	var item = {
+			_id: $('#position').val() + ":" + $('#pname').val()
+	};
+    item.position				= ["Position:", $('#position').val()];
+    item.pname					= ["Player Name:", $('#pname').val()];
+    item.team					= ["Team Name:", $('#team').val()];
+    item.bye					= ["Bye Week:", $('#byeweek').val()];
+    //item.starter				= ["Starter:", starterValue];
+    item.skill					= ["Skill Level:", $('#skill').val()];
+    item.notes					= ["Notes:", $('#notes').val()];
+    
+    console.log(item);
+    
+    $.couch.db("idraft").saveDoc(item, {
+    	success: function() {
+    		console.log(item);
+        	alert("Player Added!");
+    	},
+    	error: function() {
+    		console.log("Not Working!");
+    	}
+    	
+    });
+//	var apform = $('#addPlayerForm');
+//
+//    apform.validate({
+//        invalidHandler: function(form, validator) {},
+//        submitHandler: function(){
+//            var id = Math.floor(Math.random()*1000001);
+//            var data = apform.serializeArray();
+//            localStorage.setItem(id, JSON.stringify(data));
+//            console.log(data);
+//            alert("Player Saved!");
+//            window.location.reload(apform);
+//        }
+//    });
+    //$.mobile.changePage("#players");
+    return false;
 	});
 });
 	/*$.couch.db('idraft').view('asdproject/players', {

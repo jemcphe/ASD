@@ -4,6 +4,8 @@ function(doc){
 			"position": doc.position,
 			"pname": doc.pname,
 			"team": doc.team,
+			"bye" : doc.bye,
+			"skill" : doc.skill,
 			"notes": doc.notes
 		});
 	}
