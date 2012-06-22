@@ -14,6 +14,48 @@ var urlVars = function() {
 	}	
 	return urlValues;
 };
+
+var reload = function(){
+	location.reload();
+};
+
+var storeData = function(){
+	var apform = $('#addPlayerForm');
+	apform.validate({
+		invalidHandler: function(form, validator) {},
+		submitHandler: function(){
+			$('#addPlayerButton').on('click', function(event){
+				event.preventDefault();
+				var item = {
+						_id: $('#position').val() + ":" + $('#pname').val()
+				};
+			    item.position				= ["Position:", $('#position').val()];
+			    item.pname					= ["Player Name:", $('#pname').val()];
+			    item.team					= ["Team Name:", $('#team').val()];
+			    item.bye					= ["Bye Week:", $('#byeweek').val()];
+			    //item.starter				= ["Starter:", starterValue];
+			    item.skill					= ["Skill Level:", $('#skill').val()];
+			    item.notes					= ["Notes:", $('#notes').val()];
+			    
+			    console.log(item);
+			    
+			    $.couch.db("idraft").saveDoc(item, {
+			    	success: function() {
+			    		console.log(item);
+			        	alert("Player Saved!");
+			        	location.reload(true);
+			    	},
+			    	error: function() {
+			    		console.log("Not Working!");
+			    	}
+			    	
+			    });
+			   
+			});
+		}
+	});
+};
+
 //This function grabs the url and matches it with a "key" value
 var getPosition = function(){
 	var position = (urlVars().QB || urlVars().DEF || urlVars().K || urlVars().RB || urlVars().WR ||
@@ -39,6 +81,15 @@ var getPosition = function(){
 	}
 };
 
+$("#home").live('pageInit', function(){
+	reload();
+});
+
+$("#myPlayersButton").live("click", function(){
+	$.mobile.changePage("#positions", {
+		reloadPage:true
+	});
+});
 $('#positions').live('pageshow', function(){
 	$.couch.db('idraft').view('asdproject/positions', {
 		success: function(data) {
@@ -93,74 +144,170 @@ $('#info').live('pageshow', function(){
 //				console.log(player);
 	
 	//var data = player.pname;
+	/****************************PULL PLAYER DATA FROM COUCHDB*******************************/
+	$.couch.db("idraft").view("asdproject/"+ position , {
+		
+		key: player,
+		success: function(data){
+			
+			console.log(data);
+			$('#playerInfo').empty();
+			$.each(data.rows, function(index, position) {
+				var item	= (position.value || position.doc);
+				var pname	= position.value.pname;
+				var pos		= position.value.position;
+				var team	= position.value.team;
+				var bye		= position.value.bye;
+				var skill	= position.value.skill;
+				var notes	= position.value.notes;
+					$(	'<h2>' + pname[1] + "</h2>" +
+							'<p>' + pos[0] + " " + pos[1] + "</p>" +
+							'<p>' + team[0] + " " + team[1] + "</p>" +
+							'<p>' + bye[0] + " " + bye[1] + "</p>" +
+							'<p>' + skill[0] + " " + skill[1] + "</p>" +
+							'<p>' + notes[0] + " " + notes[1] + "</p>").appendTo('#playerinfo');
+			});
+		}
+	});// END COUCH RETRIEVE
 	
-				$.couch.db("idraft").view("asdproject/"+ position , {
-					
-					key: player,
-					success: function(data){
-						
-						console.log(data);
-						$('#playerInfo').empty();
-						$.each(data.rows, function(index, position) {
-							var item	= (position.value || position.doc);
-							var pname	= position.value.pname;
-							var pos		= position.value.position;
-							var team	= position.value.team;
-							var bye		= position.value.bye;
-							var skill	= position.value.skill;
-							var notes	= position.value.notes;
-								$(	'<h2>' + pname[1] + "</h2>" +
-										'<p>' + pos[0] + " " + pos[1] + "</p>" +
-										'<p>' + team[0] + " " + team[1] + "</p>" +
-										'<p>' + bye[0] + " " + bye[1] + "</p>" +
-										'<p>' + skill[0] + " " + skill[1] + "</p>" +
-										'<p>' + notes[0] + " " + notes[1] + "</p>").appendTo('#playerinfo');
-						});
-					}
+	
+	function deleteMyPlayer(key){
+		var deletePlayer = {
+			_id : myKey
+		};
+		var yes = confirm("Delete Player?");
+		if (yes){
+
+			$.couch.db("idraft").removeDoc(deletePlayer, {
+				success: function(data) {
+					console.log(data);
+					alert("Player Was Deleted!");
+					reload();
+				}
+			});
+
+		} else {
+			alert("Player was NOT deleted!");
+		}
+	};
+	
+	
+	$("#deletePlayer").on("click", deleteMyPlayer);
+	$("#editPlayer").on("click", function(){
+		console.log("page Changed");
+		$('#addPlayerButton').off("click", storeData);
+		$('#addPlayerButton').val("Edit Player");
+		
+		$.couch.db("idraft").view("asdproject/"+ position , {
+			key: player,
+			success: function(data){
+				console.log(data);
+				$.each(data.rows, function(index, position){
+					var item = position.value;
+					var pname	= position.value.pname;
+					var pos		= position.value.position;
+					var team	= position.value.team;
+					var bye		= position.value.bye;
+					var skill	= position.value.skill;
+					var notes	= position.value.notes;
+					console.log(pname[1]);
+					$('#position').val(pos[1]);
+					$('input#pname').val(pname[1]);
+			        $('#team').val(team[1]);
+			        $('#byeweek').val(bye[1]);
+			        $('#skill').val(skill[1]);
+			        $('#notes').val(notes[1]);
 				});
+			}
+		});
+		
+		var apform = $('#addPlayerForm');
+		apform.validate({
+			invalidHandler: function(form, validator) {},
+			submitHandler: function(){
+		
+				$('#addPlayerButton').on('click', function(event){
+					event.preventDefault();
+					var edit = {
+							_id: $('#position').val() + ":" + $('#pname').val()
+					};
+				    edit.position				= ["Position:", $('#position').val()];
+				    edit.pname					= ["Player Name:", $('#pname').val()];
+				    edit.team					= ["Team Name:", $('#team').val()];
+				    edit.bye					= ["Bye Week:", $('#byeweek').val()];
+				    //item.starter				= ["Starter:", starterValue];
+				    edit.skill					= ["Skill Level:", $('#skill').val()];
+				    edit.notes					= ["Notes:", $('#notes').val()];
+				    
+				    console.log(edit);
+				    
+				    $.couch.db("idraft").saveDoc(edit, {
+				    	success: function() {
+				    		console.log(edit);
+				        	alert("Player Saved!");
+				        	reload();
+				    	},
+				    	error: function() {
+				    		console.log("Not Working!");
+				    	}
+				    	
+				    });
+				
+		//		apform.validate({
+		//			invalidHandler: function(form, validator) {},
+		//			submitHandler: function(){
+		//				$('#addPlayerButton').on("click", storeData);
+		//			}
+		//		});
+		//		$('#position').value = item.position[1];
+		//        $('#pname').value = item.pname[1];
+		//        $('#team').value = item.team[1];
+		//        $('#byeweek').value = item.bye[1];
+				});
+			}
+		});
+	});	
+});
+
+
+$("#addPlayerPage").live("pageshow", storeData);
+	
+//	var apform = $('#addPlayerForm');
+//	apform.validate({
+//		invalidHandler: function(form, validator) {},
+//		submitHandler: function(){
+//			$('#addPlayerButton').on('click', function(event){
+//				event.preventDefault();
+//				var item = {
+//						_id: $('#position').val() + ":" + $('#pname').val()
+//				};
+//			    item.position				= ["Position:", $('#position').val()];
+//			    item.pname					= ["Player Name:", $('#pname').val()];
+//			    item.team					= ["Team Name:", $('#team').val()];
+//			    item.bye					= ["Bye Week:", $('#byeweek').val()];
+//			    //item.starter				= ["Starter:", starterValue];
+//			    item.skill					= ["Skill Level:", $('#skill').val()];
+//			    item.notes					= ["Notes:", $('#notes').val()];
+//			    
+//			    console.log(item);
+//			    
+//			    $.couch.db("idraft").saveDoc(item, {
+//			    	success: function() {
+//			    		console.log(item);
+//			        	alert("Player Added!");
+//			        	location.reload(true);
+//			    	},
+//			    	error: function() {
+//			    		console.log("Not Working!");
+//			    	}
+//			    	
+//			    });
+//			   
 //			});
 //		}
 //	});
-});
+	
 
-$("#addPlayerPage").live("pageshow", function(){
-	
-	var apform = $('#addPlayerForm');
-	apform.validate({
-		invalidHandler: function(form, validator) {},
-		submitHandler: function(){
-			$('#addPlayerButton').on('click', function(event){
-				event.preventDefault();
-				var item = {
-						_id: $('#position').val() + ":" + $('#pname').val()
-				};
-			    item.position				= ["Position:", $('#position').val()];
-			    item.pname					= ["Player Name:", $('#pname').val()];
-			    item.team					= ["Team Name:", $('#team').val()];
-			    item.bye					= ["Bye Week:", $('#byeweek').val()];
-			    //item.starter				= ["Starter:", starterValue];
-			    item.skill					= ["Skill Level:", $('#skill').val()];
-			    item.notes					= ["Notes:", $('#notes').val()];
-			    
-			    console.log(item);
-			    
-			    $.couch.db("idraft").saveDoc(item, {
-			    	success: function() {
-			    		console.log(item);
-			        	alert("Player Added!");
-			        	location.reload(true);
-			    	},
-			    	error: function() {
-			    		console.log("Not Working!");
-			    	}
-			    	
-			    });
-			   
-			});
-		}
-	});
-	
-});
 	/*$.couch.db('idraft').view('asdproject/players', {
         success : function(data) {
         	var position	 = urlVars().player;

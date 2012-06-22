@@ -1,0 +1,83 @@
+<!DOCTYPE html>  
+<html xmlns="http://www.w3.org/1999/xhtml"lang="en">
+<head>
+	<meta charset="utf-8"/>	
+	<title>iDraft: Edit Player</title>
+</head>
+<body>
+
+<div data-role="page" id="editPlayer" data-theme="a">
+		<!--Header Section-->
+		<div data-role="header" data-theme="b">
+			<img src="logo.png" alt="" class="logo"/>
+			<h4 class="headerTxt">Edit Player</h4>
+		</div>
+
+		<!--Begin Form, fieldset, and legend-->
+		<div data-role="content">
+			<form action="" method="GET" id="editPlayerForm" data-theme="a" data-ajax="false">
+				<!--<fieldset id="addPlayerFieldset" data-theme="b"> <!--Creates box around containing material-->
+					<!--<ul id="errors"></ul>-->
+					<!--<ul data-role="controlgroup" id="playerInfo">-->
+						<!--Select Position w/ dropdown option box-->
+						<div data-role="fieldcontain">
+							<label for="position">Player Position</label>
+								<select name="position" id="position" data-native-menu="false" data-theme="b" class="required">
+									<option data-placeholder="true">Select Position</option>
+									<option value="QB" class='required'>QB</option>
+									<option value="RB">RB</option>
+									<option value="WR">WR</option>
+									<option value="TE">TE</option>
+									<option value="K">K</option>
+									<option value="DEF">DEF</option>
+								</select>
+						</div>
+						<!--Name Field w/ text input-->
+						<div data-role="fieldcontain">
+							<label for="pname">Player Name</label>
+							<input type="text" name="pname" id="pname" data-theme="b" placeholder="ex. Tony Romo" class="required"/>
+							<p class="hints">First and Last name of the player you want to draft</p>
+						</div>
+						<!--Team Name-->
+						<div data-role="fieldcontain">
+							<label for="team">Team Name</label>
+							<input type="text" name="team" id="team" data-theme="b" class="required" placeholder="ex. Dallas Cowboys"/>
+							<p class="hints">Enter the Team of your player.</p>
+						</div>
+						<!--Bye Week w/ date box-->
+						<div data-role="fieldcontain">
+							<label for="byeweek">Bye Week</label>
+							<input type="date" data-role="datebox" name="byeweek" id="byeweek"  value="10/01/2012" data-options='{"mode": "calbox", "calWeekMode": true, "calWeekModeFirstDay": 1}' data-theme="b" />
+							<p class="hints">Reflects first day of Bye Week</p>
+						</div>
+						
+						<!--Player Skill w/ range slider-->
+						<div data-role="fieldcontain">
+							<label for="skill">Player Skill</label>
+							<input type="range" name="skill" id="skill" min="1" max="100" value="50" data-theme="b"/>
+						</div>
+						<!--Notes w/ box for additional user text-->
+						<div>
+							<label for="notes">Notes</label>
+							<textarea id="notes" data-theme="b"></textarea>
+						</div>
+					<!--</ul>-->
+					<!--Prominent Done/Add Button-->	
+					<div data-role="fieldcontain" id="submit">
+						<input type="submit" value="Add Player" id="editPlayerButton" data-theme="b"/>
+					</div>	
+				<!--</fieldset>-->
+			</form>
+		</div>
+
+        <div data-role="footer" data-position="fixed" data-theme-content="b">
+            <nav data-role="navbar" >
+                <ul data-theme="b">
+                    <li><a href="#home" data-theme="b" data-transition="turn" data-icon="home">Home</a></li>
+                    <li><a href="#positions" data-theme="b" data-transition="turn" data-icon="grid">My Players</a></li>
+                </ul>
+            </nav>
+        </div>
+	</div>
+</body>
+</html>
